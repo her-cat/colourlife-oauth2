@@ -5,6 +5,12 @@
 [![Build Status](https://travis-ci.org/her-cat/colourlife-oauth2.svg?branch=master)](https://travis-ci.org/her-cat/colourlife-oauth2)
 [![StyleCI build status](https://github.styleci.io/repos/214346677/shield)](https://github.styleci.io/repos/214346677)
 
+## 环境要求
+
+```php
+PHP >= 7.0
+```
+
 ## 安装
 
 ```shell
