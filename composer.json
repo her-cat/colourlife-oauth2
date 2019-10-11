@@ -1,0 +1,29 @@
+{
+    "name": "her-cat/colourlife-oauth2",
+    "description": "彩之云 App 网页授权 SDK。",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "her-cat",
+            "email": "i@her-cat.com"
+        }
+    ],
+    "require": {
+        "overtrue/socialite": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HerCat\\ColourlifeOAuth2\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HerCat\\ColourlifeOAuth2\\ServiceProvider"
+            ],
+            "aliases": {
+                "ColourlifeOAuth2": "HerCat\\ColourlifeOAuth2\\Facades\\ColourlifeOAuth2"
+            }
+        }
+    }
+}
