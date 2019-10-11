@@ -1,6 +1,6 @@
 {
     "name": "her-cat/colourlife-oauth2",
-    "description": "彩之云 Oauth2.0 授权 SDK",
+    "description": "彩之云 OAuth 2.0 授权 SDK",
     "license": "MIT",
     "authors": [
         {
