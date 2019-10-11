@@ -1,6 +1,6 @@
 <h1 align="center"> Colourlife OAuth2 </h1>
 
-<p align="center"> 基于 <a href="https://github.com/overtrue/socialite">overtrue/socialite</a> 的彩之云 OAuth 2.0 授权 SDK</p>
+<p align="center"> 基于 <a href="https://github.com/overtrue/socialite">overtrue/socialite</a> 的彩之云 OAuth 2.0 SDK</p>
 
 [![Build Status](https://travis-ci.org/her-cat/colourlife-oauth2.svg?branch=master)](https://travis-ci.org/her-cat/colourlife-oauth2)
 [![StyleCI build status](https://github.styleci.io/repos/214346677/shield)](https://github.styleci.io/repos/214346677)
