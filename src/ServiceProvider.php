@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the her-cat/colourlife-oauth2.
+ *
+ * (c) her-cat <i@her-cat.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace HerCat\ColourlifeOAuth2;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
@@ -25,6 +34,7 @@ class ServiceProvider extends LaravelServiceProvider
         if (!$this->app->has(SocialiteManager::class)) {
             $this->app->singleton(SocialiteManager::class, function ($app) {
                 $config = array_merge(config('socialite', []), config('services', []));
+
                 return new SocialiteManager($config, $app->make('request'));
             });
         }
