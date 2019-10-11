@@ -98,7 +98,7 @@ $user->getAttribute('mobile');  // 18500000001
 
 #### 配置
 
-1. 安装完成后，在 `config/app.php` 中注册 `HerCat\ColourlifeOAuth2\ServiceProvider`:
+1. 在 `config/app.php` 中注册 `HerCat\ColourlifeOAuth2\ServiceProvider`:
 
 ```php
 'providers' => [
