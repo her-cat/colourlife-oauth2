@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the her-cat/colourlife-oauth2.
+ *
+ * (c) her-cat <i@her-cat.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
 use HerCat\ColourlifeOAuth2\ColourlifeOAuth2Provider;
@@ -17,6 +26,7 @@ class ColourlifeOAuth2ProviderTest extends TestCase
 {
     /**
      * @param string $redirectUri
+     *
      * @return MockInterface|\Mockery\LegacyMockInterface
      */
     public function getProvider($redirectUri = 'mock-redirect-uri')
@@ -25,7 +35,7 @@ class ColourlifeOAuth2ProviderTest extends TestCase
             Request::create('foo'),
             'mock-client-id',
             'mock-client-secret',
-            $redirectUri
+            $redirectUri,
         ])->makePartial()->shouldAllowMockingProtectedMethods();
     }
 
@@ -254,7 +264,7 @@ class ColourlifeOAuth2ProviderTest extends TestCase
     public function testUserReturnsAUserInstanceForTheAuthenticatedRequest()
     {
         $request = Request::create('foo', 'GET', [
-            'state' => str_repeat('A', 40), 'code' => 'mock-code'
+            'state' => str_repeat('A', 40), 'code' => 'mock-code',
         ]);
 
         $session = Mockery::mock(SessionInterface::class);
@@ -269,7 +279,7 @@ class ColourlifeOAuth2ProviderTest extends TestCase
             $request,
             'mock-client-id',
             'mock-client-secret',
-            'mock-redirect-uri'
+            'mock-redirect-uri',
         ])->makePartial()->shouldAllowMockingProtectedMethods();
 
         $data = [
