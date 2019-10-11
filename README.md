@@ -2,6 +2,7 @@
 
 <p align="center"> 彩之云 App Oauth2.0 授权 SDK</p>
 
+[![StyleCI build status](https://github.styleci.io/repos/214346677/shield)](https://github.styleci.io/repos/214346677)
 
 ## Installing
 
